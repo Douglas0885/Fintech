@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linkando com o Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+        <!-- Linkando com o Google Fonts (POPPINS)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+
+        <!-- Linkando com o Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Linkando com o CSS style.css -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Fintech</title>
+</head>
+<body>
+    <header>
+        <i class="fa-sharp fa-regular fa-chart-mixed-up-circle-dollar"></i>
+        <!------------------ Inicio NavBar ------------------>
+        <nav class="navbar navbar-expand-lg bg-warning fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-larg" href="#"><i class="fa-sharp fa-regular fa-chart-mixed-up-circle-dollar">Fintech</i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"       id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/pages/quem-somos.html">Quem Somos Nós</a>
+                        </li>
+                        <!-- Dropdown - Lista de produtos -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Produtos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Controle de Despesas</a></li>
+                                <li><a class="dropdown-item" href="#">Reserva de Emergência</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li> -->
+                                <li><a class="dropdown-item" href="#">Metas</a></li>
+                                <li><a class="dropdown-item" href="#">Investimentos</a></li>
+                                <!-- Dropdown - Lista de investimentos -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Produtos
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Controle de Despesas</a></li>
+                                        <li><a class="dropdown-item" href="#">Reserva de Emergência</a></li>
+                                        <!-- <li><hr class="dropdown-divider"></li> -->
+                                        <li><a class="dropdown-item" href="#">Metas</a></li>
+                                        <li><a class="dropdown-item" href="#">Investimentos</a></li>
+                                <!-- Fim Dropdown - Lista de investimentos -->
+                            </ul>
+                        </li>
+                        <!-- Fim Dropdown - Lista de produtos -->
+                    </ul>
+                    <!-- Botão Login/Cadastro -->
+                    <div class="dropdown dropstart">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            Login/Cadastro
+                        </button>
+                        <form class="dropdown-menu p-4">
+                            <div class="mb-3">
+                                <label for="exampleDropdownFormEmail2" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleDropdownFormPassword2" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Senha" required>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                <label class="form-check-label" for="dropdownCheck2">
+                                    Remember me
+                                </label>
+                                </div>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                            <a href="./assets/pages/cadastro.html" class="pt-4">Cadastre-se</a>
+                        </form>
+                    </div>
+                    <!-- Fim Botão Login/Cadastro -->
+                </div>
+            </div>
+        </nav>
+        <!------------------ Fim NavBar ------------------>
+    </header>
+
+    <main class="container-fluid">
+        <!---------------------- Parte 1 ---------------------->
+        <section class="my-5 bg-light">
+                <div class="row d-flex">
+                    <div class="col-12 col-sm-6 col-xl-6 mt-4">
+                        <h1 class="display-3 p-5 mt-2 color-fintech">SUAS FINANÇAS NA MELHOR DIREÇÃO</h1>
+                        <h3 class="my-5 pt-1 px-5">A Fintech se posiciona no mercado, oferecendo a seus clientes uma maneira fácil de organização financeira, educação contínua e informações dos princípais acontecimentos que possam impactar suas finanças. Nosso objetivo é auxiliar desde a organização das despezas, mensuração de metas e visualização dos seus investimentos.</h3>
+                    </div>
+                
+                    <div class="col-12 col-sm-6 col-xl-6 mt-4 text-center
+                    ">                    
+                    <img src="./assets/images/Finance analytics _Monochromatic.png" alt="Analisando as financias" title="Analisando as financias" class="rounded img-fluid">
+                    </div>
+                </div>
+        </section>
+        <!---------------------- Fim Parte 1 ---------------------->
+
+        
+        <!---------------------- Parte 2 ---------------------->
+        <section class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-xl-6">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/pexels-liza-summer-6347724.jpg" alt="Imagem Gráfico de ações pelo celular." title="Gráfico de ações pelo celular." class="img-fluid rounded d-block ilust_t_min">
+                        </div>
+                        <div class="container-fluid col-12 mt-5">
+                            <h3 class="text-center py-3">Seja de um Desktop ou Smartphone. As melhores tecnologias descomplicando sua vida.</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- inicio dos cards -->
+                <div class="col-12 col-sm-12 col-xl-6">
+                    <div class="container-fluid row grid gap-0 row-gap-3 section-card">
+                        <!----------------- 1o Card ----------------->
+                        <div class="col-12 col-sm-6 col-xl-6">
+                            <div class="card text-center align-items-center">
+                                <img src="./assets/images/Accountant_Two Color.png" alt=""class="card-img-top img-fluid imagem_t_min">
+                                <div class="card-body">
+                                    <h5 class="card-title">Controle de Gastos</h5>
+                                    <p class="card-text my-3">Esse é o primeiro passo para uma vida mais organizada e nós iremos te ajudar nessa jornada, tente começar por aqui siodo!</p>
+                                    <a href="#" class="btn btn-primary">Saiba Mais!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!----------------- 2o Card ----------------->
+                        <div class="col-12 col-sm-6 col-xl-6">
+                            <div class="card text-center align-items-center">
+                                <img src="./assets/images/Piggy Bank_Monochromatic.png" alt=""class="card-img-top img-fluid imagem_t_min">
+                                <div class="card-body">
+                                    <h5 class="card-title">Reserva de Emergência</h5>
+                                    <p class="card-text my-3">Guardar o dinheiro em baixo do colchão é coisa do passado. Poupe para montar sua reserva de emergência e realizar metas.</p>
+                                    <a href="#" class="btn btn-primary">Saiba Mais!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!----------------- 3o Card ----------------->
+                        <div class="col-12 col-sm-6 col-xl-6">
+                            <div class="card text-center align-items-center">
+                                <img src="./assets/images/Travel plans_Monochromatic.png" alt=""class="card-img-top img-fluid imagem_t_min">
+                                <div class="card-body">
+                                    <h5 class="card-title">Metas</h5>
+                                    <p class="card-text my-3">Para quem não sabe para onde vai, qualquer caminho serve. Defina suas metas é siga nessa direção.</p>
+                                    <a href="#" class="btn btn-primary">Saiba Mais!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!----------------- 4o Card ----------------->
+                        <div class="col-12 col-sm-6 col-xl-6">
+                            <div class="card text-center align-items-center">
+                                <img src="./assets/images/Revenue _Monochromatic.png" alt=""class="card-img-top img-fluid imagem_t_min">
+                                <div class="card-body">
+                                    <h5 class="card-title">Investimentos</h5>
+                                    <p class="card-text my-3">Esse é o primeiro passo para uma vida mais organizada mas, nós iremos te ajudar, tente começar por aqui!</p>
+                                    <a href="#" class="btn btn-primary">Saiba Mais!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!---------------------- Fim Parte 2 ---------------------->
+
+    </main>
+
+    <!--------------------------- Rodapé --------------------------->
+    <footer class="container-fluid bg-blue-2 mt-5" id="contato">
+        <div class="container py-5">
+            <h4 class="my-title text-center">Contato</h4>
+            <h3 class="text-center my-title mb-4">Veja como você pode falar conosco</h3>
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <!-- redes sociais -->
+                        <div class="col-lg-6 my-4 text-center">
+                            <p class="text-center">
+                                <a class="rede-social" href="http://instagram.com.br" target="_blank">
+                                    <i class="fa-brands fa-instagram fa-xl mx-2"></i>
+                                </a>
+                                <a class="rede-social" href="http://linkedin.com.br" target="_blank">
+                                    <i class="fa-brands fa-linkedin fa-xl mx-2"></i>
+                                </a>
+                                <a class="rede-social" href="http://twitter.com" target="_blank">
+                                    <i class="fa-brands fa-twitter fa-xl mx-2"></i>
+                                </a>
+                            </p>
+                            <!------------- Redes Sociais ------------->
+                            <h3>Nossas Redes Sociais</h3>
+                            
+                        </div>
+                        <div class="col-lg-6 my-4 text-center">
+                            <p>
+                                <i class="fa-solid fa-phone icon-contato fa-lg"></i>
+                            </p>
+                            <h3>Telefone</h3>
+                            <p>
+                                (11) 5555-7777 <br>
+                                (11) 98765-4321
+                            </p>
+                        </div>
+                        <div class="col-lg-6 my-4 text-center">
+                            <p>
+                                <i class="fa-solid fa-envelope icon-contato fa-lg"></i>
+                            </p>
+                            <h3>Email</h3>
+                            <p>
+                                contato@fintech.com.br <br>
+                            </p>
+                        </div>
+                        <div class="col-lg-6 my-4 text-center">
+                            <p>
+                                <i class="fa-solid fa-clock icon-contato fa-lg"></i>
+                            </p>
+                            <h3>Atendimento</h3>
+                            <p>
+                                Segunda - Sexta <br>
+                                08:00 - 21:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form action="">
+                        <div class="row text-start">
+                            <div class="col-lg-6 my-2">
+                                <label for="nome" class="form-label">Seu nome</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                            </div>
+
+                            <div class="col-lg-6 my-2">
+                                <label for="email" class="form-label">Seu email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Seu email">
+                            </div>
+                            
+                            <div class="col-lg-6 my-2">
+                                <label for="fone" class="form-label">Seu Telefone</label>
+                                <input type="tel" class="form-control" id="fone" placeholder="(xx) 99999-9999">
+                            </div>
+                            
+                            <div class="col-lg-6 my-2">
+                                <label for="mensagem" class="form-label">Assunto</label>
+                                <input type="text" class="form-control" id="mensagem" placeholder="Assunto">
+                            </div>
+                            
+                            <div class="col-lg-12 my-2">
+                                <label for="nome" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="mensagem" name="mensagem" placeholder="Sua mensagem">
+                                </textarea>
+                            </div>
+
+                            <div class="col-lg-12 my-2 d-flex justify-content-end">
+                                <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+
+    </footer>
+
+    <!-- Linkando com o JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

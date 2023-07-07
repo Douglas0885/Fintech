@@ -1,0 +1,86 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color-fintech: #d45a09;
+}
+
+body{
+    /* background-color: #0946b9c5; */
+}
+.nav-larg{
+    font-weight: 900;
+}
+
+.imagem_t_min{
+    max-height: 240px;
+    max-width: 300px;
+}
+
+.ilust_t_min{   /*Usado na Parte2 1º imagem*/
+    max-height: 650px;
+}
+
+.color-fintech{
+    font-weight: 900;
+    color: var(--color-fintech);
+}
+
+.section-card{
+    margin: 0 auto;
+}
+
+.card-body h5{
+    font-size: 3vmin;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.card{
+    height: 520px;
+}
+
+.card-body p{
+    font-size: 2vmin;
+    text-align: justify;
+    height: 100px;
+}
+
+.card-body a{
+    position: relative;
+    top: 25px;
+}
+
+/* Rodapé > Redes Sociais */
+.rede-social{
+    text-decoration: none;
+    color: inherit;
+}
+.rede-social .fa-instagram:hover{
+    transform: scale(1.5);
+    color: rgb(88, 5, 94);
+}
+.rede-social .fa-linkedin:hover{
+    color: rgb(18, 42, 180);
+    transform: scale(1.5);
+}
+.rede-social .fa-twitter:hover{
+    color: rgb(15, 101, 238);
+    transform: scale(1.5);
+}
+/* FIM - Rodapé > Redes Sociais */
+
+.b-voltar:hover , .btn:hover{
+    transform: scale(1.1);
+}
+
+@media(max-width:575px){
+    .card-body h5{
+        font-size: 4.5vmin;
+    }
+    
+    .card-body p{
+        font-size: 3.5vmin;
+    }
+}
